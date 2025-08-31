@@ -43,3 +43,13 @@ const productosCategoria = productos.filter(
   (productos) => productos.categoria === "Electrónicos"
 );
 console.log(productosCategoria);
+
+console.log("Productos con Stock menor a 10:");
+
+const precioMenor = productos.filter((productos) => productos.stock < 10);
+console.log(precioMenor);
+
+console.log("Productos con Precio mayor a $500:");
+
+const precioMayor = productos.filter((productos) => productos.precio > 500);
+console.log(precioMayor);
