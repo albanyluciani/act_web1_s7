@@ -20,3 +20,7 @@ const masVendido = ventas.reduce((max, cantidad) =>
   cantidad > max ? cantidad : max
 );
 console.log(masVendido);
+
+console.log("El promedio de venta por transacción es:");
+const promedioPorTransaccion = totalIngresos / ventas.length;
+console.log(promedioPorTransaccion);
