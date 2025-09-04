@@ -7,7 +7,27 @@ console.log("Orden Ascendete", numerosDesordenados);
 numerosDesordenados.reverse();
 console.log("Orden Descendente", numerosDesordenados);
 
-const listaPersonas = [
+const personas = [
+  "Albany",
+  "Samira",
+  "Irwin",
+  "Said",
+  "Belkys",
+  "Alvaro",
+  "Lola",
+  "Lili",
+];
+
+console.log("Lista de personas ordenadas alfabeticamente:");
+
+personas.sort();
+console.log(personas);
+
+console.log("Nombres ordenados en reversa:");
+personas.reverse();
+console.log(personas);
+
+const listaPersonasConEdad = [
   { nombres: "Albany", edad: 33 },
   { nombre: "Belkys", edad: 56 },
   { nombre: "Irwin", edad: 34 },
@@ -18,11 +38,10 @@ const listaPersonas = [
   { nombre: "Lola", edad: 9 },
 ];
 
-console.log("Lista de nombres ordenados alfabeticamente:");
+console.log("Lista de nombres ordenados por edad:");
 
-listaPersonas.sort();
-console.log(listaPersonas);
+listaPersonasConEdad.sort((a, b) => a.edad - b.edad);
+console.log(listaPersonasConEdad);
 
-console.log("Nombres ordenados en reversa:");
-listaPersonas.reverse();
-console.log(listaPersonas);
+listaPersonasConEdad.reverse();
+console.log(listaPersonasConEdad);
